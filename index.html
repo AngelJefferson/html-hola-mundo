@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Proyecto Final - Hola Mundo</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <title>Práctica Final - Electiva 2 DevOps</title>
   <style>
     body {
       font-family: 'Arial', sans-serif;
@@ -20,42 +20,50 @@
     .container {
       text-align: center;
       background-color: #fff;
-      border-radius: 8px;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-      padding: 40px;
-      width: 80%;
-      max-width: 600px;
+      border-radius: 12px;
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+      padding: 50px 30px;
+      width: 90%;
+      max-width: 700px;
     }
 
     h1 {
       color: #333;
       font-size: 3rem;
+      margin-bottom: 20px;
     }
 
     .info {
-      margin-top: 20px;
       font-size: 1.2rem;
-      color: #666;
-    }
-
-    .footer {
-      margin-top: 30px;
-      font-size: 1rem;
-      color: #888;
-    }
-
-    .footer a {
-      color: #00aaff;
-      text-decoration: none;
-    }
-
-    .footer a:hover {
-      text-decoration: underline;
+      color: #555;
+      margin-bottom: 30px;
+      line-height: 1.6;
     }
 
     .highlight {
       color: #00aaff;
       font-weight: bold;
+    }
+
+    .icons {
+      margin: 30px 0;
+    }
+
+    .icons img {
+      height: 50px;
+      margin: 0 15px;
+      vertical-align: middle;
+      transition: transform 0.3s ease;
+    }
+
+    .icons img:hover {
+      transform: scale(1.1);
+    }
+
+    .footer {
+      margin-top: 40px;
+      font-size: 0.95rem;
+      color: #888;
     }
   </style>
 </head>
@@ -63,10 +71,19 @@
   <div class="container">
     <h1>¡Hola Mundo!</h1>
     <p class="info">
-      Bienvenido a mi proyecto final. Mi nombre es <span class="highlight">Angel Jefferson Sanchez Ventura</span> y mi matrícula es <span class="highlight">2021-1816</span>.
+      Bienvenidos a esta página web, desarrollada como parte de la <span class="highlight">práctica final de la asignatura Electiva 2 - DevOps</span>.<br><br>
+      En esta página se creó un repositorio con una estructura básica HTML. Se implementó una <span class="highlight">prueba unitaria</span>, se levantó un <span class="highlight">servidor local con Docker usando Nginx</span> y se configuró <span class="highlight">GitHub Actions</span> para ejecutar pruebas automáticamente con cada cambio. Finalmente, el sitio fue <span class="highlight">publicado en GitHub Pages</span>.<br><br>
+      Desarrollado por: <span class="highlight">Angel Jefferson Sanchez Ventura</span> - Matrícula: <span class="highlight">2021-1816</span>
     </p>
+
+    <div class="icons">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" title="GitHub" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" title="Docker" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg" alt="Nginx" title="Nginx" />
+    </div>
+
     <p class="footer">
-      Este proyecto fue realizado como parte de la práctica final del curso de Desarrollo de Software.
+      &copy; Electiva 2 — Angel Jefferson Sanchez Ventura | Matrícula: 2021-1816
     </p>
   </div>
 </body>
