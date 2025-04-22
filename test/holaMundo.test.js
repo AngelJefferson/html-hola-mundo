@@ -2,7 +2,8 @@ const fs = require('fs');
 const path = require('path');
 
 describe('Contenido del index.html', () => {
-  const html = fs.readFileSync(path.join(__dirname, 'index.html'), 'utf-8');
+  // Ajustamos la ruta para que apunte al archivo index.html en la raíz del proyecto
+  const html = fs.readFileSync(path.join(__dirname, '..', 'index.html'), 'utf-8');
 
   test('Contiene el título "¡Hola Mundo!"', () => {
     expect(html).toContain('<h1>¡Hola Mundo!</h1>');
